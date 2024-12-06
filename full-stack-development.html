@@ -1,0 +1,2880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.green.min.css">
+    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .web-designing--hero {
+            background-image: url(images/sithub25.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 270px;
+        }
+
+        .navbar-outer {
+            background-image: initial;
+        }
+
+        .navbar-moven {
+            position: fixed;
+            top: 0px;
+            z-index: 2;
+            background-color: rgb(0, 11, 114);
+        }
+
+        .navbar-untouched {
+            position: static;
+            background-image: initial;
+        }
+
+        #navbar a {
+            font-size: 17px;
+        }
+        .accordion-button-default {
+            background-color: rgb(0, 11, 114) !important;
+            color: white !important;
+        }
+
+        .accordion-button-focus {
+            background-color: white !important;
+            color: black !important;
+        }
+        .accordion-button-focus:focus {
+            background-color: rgb(0, 11, 114) !important;
+            color: white !important;
+        }
+        .nav-accordion{
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+            width: 95%;
+            position: relative;
+        }
+        .nav-accordion::after{
+            content: '';
+            clip-path: polygon(0 0, 0% 100%, 100% 50%);
+            background: white;
+            width: 4%;
+            height: 33%;
+            position: absolute;
+            top: 33%;
+            right: -4%;
+        }
+        .accordion-link{
+            color: rgb(170,170,170);
+        }
+        .accordion-link:hover{
+            color: blue;
+        }
+        .active{
+            color: blue;
+        }
+        .accordion-body .list-inline{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid header" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between pt-3">
+                    <ul class="list-inline">
+                        <li class="list-inline-item me-2">
+                            <a href="mailto: info@sithub.in" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span class="d-lg-inline d-md-inline d-sm-none">info@sithub.in</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item me-2">
+                            <a href="tel: +91-7210018919" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-phone"></i>
+                                <span class="d-lg-inline d-md-inline d-sm-none">+91-7210018919</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="index.html" class="text-decoration-none text-white">Pay Now</a>
+                        </li>
+                    </ul>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="verify-certificate.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-check"></i>
+                                <span class="d-xl-inline d-lg-block d-md-block d-sm-none">
+                                    <span class="d-xl-inline d-lg-inline d-md-block d-sm-none">Verify</span>
+                                    Certificate
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item ms-2">
+                            <a href="login.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="d-xl-inline d-lg-block d-md-inline d-sm-none">Login</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item ms-2">
+                            <a href="https://www.facebook.com/sithubtraining" target="blank"
+                                class="text-decoration-none text-white">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item ms-2">
+                            <a href="https://www.instagram.com/sithubtraining/" target="blank"
+                                class="text-decoration-none text-white">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item ms-2">
+                            <a href="https://www.youtube.com/@sithubtraining" target="blank"
+                                class="text-decoration-none text-white">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid web-designing--hero px-0">
+        <div class="container-fluid navbar-outer" id="navbar-outer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="navbar navbar-expand-lg">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="https://www.sithub.in/Admin/WebsiteImages/060324110713sithub-logo1.svg" alt=""
+                                    width="170px">
+                            </a>
+                            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#nav">
+                                <i class="fa-solid fa-bars text-white"></i>
+                            </button>
+                            <div class="offcanvas offcanvas-end" id="nav" data-bs-backdrop="false">
+                                <div class="offcanvas-header">
+                                    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="nav navbar-nav ms-auto d-none d-lg-flex">
+                                        <li class="nav-item nav-item--first me-4 dropdown-origin mt-2">
+                                            Industrial Training
+                                            <i class="fa-solid fa-angle-down"></i>
+
+                                            <ul class="list-unstyled dropdown">
+
+                                                <li class="mega-dropdown-origin">
+                                                    <a href="professional-courses.html">
+                                                        Professional Courses
+                                                        <i class="fa-solid fa-angle-right"></i>
+                                                    </a>
+                                                    <ul class="list-unstyled mega-dropdown">
+                                                        <li><a href="web-designing.html">Web Designing</a></li>
+                                                        <li><a href="web-development.html">Web Development</a></li>
+                                                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                                                        <li><a href="full-stack-development.html">Full Stack
+                                                                Development</a>
+                                                        </li>
+                                                        <li><a href="mern-stack.html">Mern Stack</a></li>
+                                                        <li><a href="mean-stack.html">Mean Stack</a></li>
+                                                        <li><a href="graphics-design.html">Graphics Design</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="mega-dropdown-origin">
+                                                    <a href="short-term-courses.html">
+                                                        Short Term Courses
+                                                        <i class="fa-solid fa-angle-right"></i>
+                                                    </a>
+                                                    <ul class="list-unstyled mega-dropdown">
+                                                        <li>
+                                                            <a href="seo.html">SEO</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="html-css.html">HTML and CSS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wordpress.html">Wordpress</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="jquery.html">JQuery</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript.html">Javascript</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="bootstrap.html">Bootstrap</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="corel-draw.html">Corel Draw</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="angular-development.html">Angular Development</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="php.html">Php</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="react-js.html">React Js</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="python.html">Python</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="mongo-db.html">Mongo DB</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                        <li class="nav-item me-4 dropdown-origin mt-2">
+                                            Student
+                                            <i class="fa-solid fa-angle-down"></i>
+                                            <ul class="list-unstyled dropdown">
+                                                <li>
+                                                    <a href="admission-criteria.html">Admission Criteria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="student-internship.html">Student Internship</a>
+                                                </li>
+                                                <li>
+                                                    <a href="student-placement.html">Student Placement</a>
+                                                </li>
+                                                <li>
+                                                    <a href="reviews.html">Reviews</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item me-4 dropdown-origin mt-2">
+                                            Educator
+                                            <i class="fa-solid fa-angle-down"></i>
+                                            <ul class="list-unstyled dropdown">
+                                                <li>
+                                                    <a href="company-internship.html">Company Internship</a>
+                                                </li>
+                                                <li>
+                                                    <a href="company-placement.html">Company Placement</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item me-4">
+                                            <a href="gallery.html" class="nav-link text-decoration-none fw-bold">
+                                                Gallery
+                                            </a>
+                                        </li>
+                                        <li class="nav-item me-4">
+                                            <a href="blogs.html" class="nav-link text-decoration-none fw-bold">
+                                                Blogs
+                                            </a>
+                                        </li>
+                                        <li class="nav-item me-4">
+                                            <a href="contact.html" class="nav-link text-decoration-none fw-bold">
+                                                Contact
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="tel: +91-7210018919">
+                                                <button class="navbar-btn">+91-7210018919</button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled d-lg-none d-md-block d-sm-block ps-3">
+                                        <li class="mb-3">
+                                            Industrial Training
+                                            <i class="fa-solid fa-caret-down ms-3" data-bs-toggle="collapse"
+                                                data-bs-target="#industrial"></i>
+                                            <div class="collapse" id="industrial">
+                                                <ul class="list-unstyled ps-3 mt-3">
+                                                    <li class="mb-3">
+                                                        <a href="professional-courses.html"
+                                                            class="text-decoration-none text-black">Professional
+                                                            Courses</a>
+                                                        <i class="fa-solid fa-caret-down ms-3" data-bs-toggle="collapse"
+                                                            data-bs-target="#professional"></i>
+                                                        <div class="collapse" id="professional">
+                                                            <ul class="list-unstyled ps-3 mt-3">
+                                                                <li class="mb-3">
+                                                                    <a href="web-designing.html"
+                                                                        class="text-decoration-none text-black">Web
+                                                                        Designing</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="web-development.html"
+                                                                        class="text-decoration-none text-black">Web
+                                                                        Development</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="digital-marketing.html"
+                                                                        class="text-decoration-none text-black">Digital
+                                                                        Marketing</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="full-stack-development.html"
+                                                                        class="text-decoration-none text-black">Full
+                                                                        Stack
+                                                                        Development</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="mern-stack.html"
+                                                                        class="text-decoration-none text-black">Mern
+                                                                        Stack</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="mean-stck.html"
+                                                                        class="text-decoration-none text-black">Mean
+                                                                        Stack</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="graphics-design.html"
+                                                                        class="text-decoration-none text-black">Graphics
+                                                                        Design</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <a href="short-term-courses.html"
+                                                            class="text-decoration-none text-black">Short Term
+                                                            Courses</a>
+                                                        <i class="fa-solid fa-caret-down ms-3" data-bs-toggle="collapse"
+                                                            data-bs-target="#shortterm"></i>
+                                                        <div class="collapse" id="shortterm">
+                                                            <ul class="list-unstyled ps-3 mt-3">
+                                                                <li class="mb-3">
+                                                                    <a href="seo"
+                                                                        class="text-decoration-none text-black">SEO</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="html-css.html"
+                                                                        class="text-decoration-none text-black">HTML and
+                                                                        CSS</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="wordpress.html"
+                                                                        class="text-decoration-none text-black">Wordpress</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="jquery.html"
+                                                                        class="text-decoration-none text-black">JQuery</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="javascript.html"
+                                                                        class="text-decoration-none text-black">Javascript</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="bootstrap.html"
+                                                                        class="text-decoration-none text-black">Bootstrap</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="corel-draw.html"
+                                                                        class="text-decoration-none text-black">Corel
+                                                                        Draw</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="angular-development.html"
+                                                                        class="text-decoration-none text-black">Angular
+                                                                        Development</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="php.html"
+                                                                        class="text-decoration-none text-black">Php</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="react-js.html"
+                                                                        class="text-decoration-none text-black">React
+                                                                        Js</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="python.html"
+                                                                        class="text-decoration-none text-black">Python</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="mongo-db.html"
+                                                                        class="text-decoration-none text-black">Mongo
+                                                                        DB</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            Student
+                                            <i class="fa-solid fa-caret-down ms-3" data-bs-toggle="collapse"
+                                                data-bs-target="#student"></i>
+                                            <div class="collapse" id="student">
+                                                <ul class="list-unstyled ps-3 mt-3">
+                                                    <li class="mb-3">
+                                                        <a href="admission-criteria.html"
+                                                            class="text-decoration-none text-black">
+                                                            Admission Criteria
+                                                        </a>
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <a href="student-internship.html"
+                                                            class="text-decoration-none text-black">
+                                                            Student Internship
+                                                        </a>
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <a href="student-placement.html"
+                                                            class="text-decoration-none text-black">
+                                                            Student Placement
+                                                        </a>
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <a href="reviews.html" class="text-decoration-none text-black">
+                                                            Reviews
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            Educator
+                                            <i class="fa-solid fa-caret-down ms-3" data-bs-toggle="collapse"
+                                                data-bs-target="#educator"></i>
+                                            <div class="collapse" id="educator">
+                                                <ul class="list-unstyled ps-3 mt-3">
+                                                    <li class="mb-3">
+                                                        <a href="company-internship.html"
+                                                            class="text-decoration-none text-black">
+                                                            Company Internship
+                                                        </a>
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <a href="company-placement.html"
+                                                            class="text-decoration-none text-black">
+                                                            Company Placement
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="gallery.html" class="text-decoration-none text-black">Gallery</a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="blogs.html" class="text-decoration-none text-black">Blogs</a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="contact.html" class="text-decoration-none text-black">Contact</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="tel: +91-7210018919">
+                                                <button class="navbar-btn">+91-7210018919</button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 text-white">
+                    <h1>Full Stack Development COURSE</h1>
+                    <form action="" method="post" class="bg-white bg-opacity-50 px-3 py-5 rounded-4 mt-4">
+                        <h3>Book your seat for Free Demo Call @7210018919</h3>
+                        <input type="text" name="name" placeholder="Your Name" class="form-control"><br>
+                        <input type="text" name="mobilenumber" placeholder="Your Mobile No." class="form-control"><br>
+                        <textarea name="enquiry" id="" cols="30" rows="3" placeholder="Enter Your Enquiry"
+                            class="form-control"></textarea><br>
+                        <input type="submit" id="submit" class="form-control text-white"
+                            style="background: linear-gradient(to right, rgb(255,157,8), rgb(255,124,27), rgb(255,91,46));">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-4 d-none d-lg-block d-md-block">
+                <img src="https://www.sithub.in/pages/assets/images/logo/plane-flip-left.webp" alt="" width="100%">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src="https://www.sithub.in/pages/assets/images/logo/how-we-work.webp" alt="" width="100%">
+            </div>
+            <div class="col-4 d-none d-lg-block d-md-block">
+                <img src="https://www.sithub.in/pages/assets/images/logo/plane.webp" alt="" width="100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="https://www.sithub.in/pages/assets/images/services-icons/conversation.png" alt=""
+                            width="100%">
+                    </div>
+                    <div class="col-10">
+                        <h3>Full Stack Development Demo</h3>
+                        <p class="text-secondary">SITHUB provides two free demo classes. Where you can feel the quality
+                            of training. You can take sessions online mode or in classroom mode, both are available. We
+                            guarantee you 100% satisfaction and your classes will be similar to your demo class..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="https://www.sithub.in/pages/assets/images/services-icons/presentation.png" alt=""
+                            width="100%">
+                    </div>
+                    <div class="col-10">
+                        <h3>Professional Training By Expert</h3>
+                        <p class="text-secondary">In SITHUB , you will get trained by our professional experts for 
+                            Full Stack Development Course in Delhi. You will learn under the guidance of experienced professionals.
+                            You will get practical and project-based training. Which will raise your confidence at the
+                            end of the course.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="https://www.sithub.in/pages/assets/images/services-icons/computer.png" alt=""
+                            width="100%">
+                    </div>
+                    <div class="col-10">
+                        <h3>Project Based Training</h3>
+                        <p class="text-secondary">After completion of course, it will be mandatory for you to submit a
+                            project made by you. Which will make you be able to prepare yourself for the Job Placements.
+                            You will get this project-based training in 
+                            Full Stack Development Course in Dwarka only.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="https://www.sithub.in/pages/assets/images/services-icons/like.png" alt=""
+                            width="100%">
+                    </div>
+                    <div class="col-10">
+                        <h3>Course Completion Certificate</h3>
+                        <p class="text-secondary">After successful completion of the course, when you will submit a
+                            project related to the course, SITHUB will issue a course completion certificate to the
+                            student. This certificate is proof that you have completed and passed the course.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white text-center py-3" style="background-color: rgb(0,11,114);">
+        <div class="row">
+            <div class="col">
+                <h2>-- Full Stack Development Course Module --</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <nav>
+                    <ul class="nav nav-tab">
+                        <div class="row">
+                            <div class="col-12">
+                                <li class="nav-item nav-accordion py-2 mb-3">
+                                    <a href="#intermediate" class="nav-link active accordion-link" data-bs-toggle="tab">Intermediate Level</a>
+                                </li>
+                            </div>
+                            <div class="col-12">
+                                <li class="nav-item nav-accordion py-2 mb-3">
+                                    <a href="#pro" class="nav-link accordion-link" data-bs-toggle="tab">Professional Level</a>
+                                </li>
+                            </div>
+                            <div class="col-12">
+                                <li class="nav-item nav-accordion py-2">
+                                    <a href="#master" class="nav-link accordion-link" data-bs-toggle="tab">Master Level</a>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 border p-3" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="intermediate">
+                        <div class="accordion" id="main-accor1">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <button class="accordion-button accordion-button-default" data-bs-toggle="collapse"
+                                        data-bs-target="#accor">HTML 5</button>
+                                </div>
+                                <div class="collapse accordion-collapse" id="accor" data-bs-parent="#main-accor1">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Basic</li>
+                                                    <li class="list-item">Headings</li>
+                                                    <li class="list-item">Quotations</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Elements</li>
+                                                    <li class="list-item">Paragrahs</li>
+                                                    <li class="list-item">Comments</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Attributes</li>
+                                                    <li class="list-item">Formatting</li>
+                                                    <li class="list-item">Colors</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor2">CSS 3</button>
+                                <div class="collapse accordion-collpase" id="accor2" data-bs-parent="#main-accor1">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Comments</li>
+                                                    <li class="list-item">Borders</li>
+                                                    <li class="list-item">Height/Width</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Colors</li>
+                                                    <li class="list-item">Margins</li>
+                                                    <li class="list-item">Box Model</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Backgrounds</li>
+                                                    <li class="list-item">Padding</li>
+                                                    <li class="list-item">Outline</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor3">Bootstrap 5</button>
+                                <div class="collapse accordion-collpase" id="accor3" data-bs-parent="#main-accor1">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Breakpoints</li>
+                                                    <li class="list-item">Columns</li>
+                                                    <li class="list-item">Alerts</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Containers</li>
+                                                    <li class="list-item">Gutters</li>
+                                                    <li class="list-item">Badge</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Grid</li>
+                                                    <li class="list-item">Accordion</li>
+                                                    <li class="list-item">Breadcrumb</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor4">Javascript</button>
+                                <div class="collapse accordion-collpase" id="accor4" data-bs-parent="#main-accor1">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor5">PHP</button>
+                                <div class="collapse accordion-collpase" id="accor5" data-bs-parent="#main-accor1">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor-a">MySQL</button>
+                                <div class="collapse accordion-collpase" id="accor-a" data-bs-parent="#main-accor1">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor-b">Wordpress (CMS)</button>
+                                <div class="collapse accordion-collpase" id="accor-b" data-bs-parent="#main-accor1">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor-c">cPanel</button>
+                                <div class="collapse accordion-collpase" id="accor-c" data-bs-parent="#main-accor1">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor-d">portfolio</button>
+                                <div class="collapse accordion-collpase" id="accor-d" data-bs-parent="#main-accor1">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor-e">Visual Studio</button>
+                                <div class="collapse accordion-collpase" id="accor-e" data-bs-parent="#main-accor1">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor-f">Project Setup</button>
+                                <div class="collapse accordion-collpase" id="accor-f" data-bs-parent="#main-accor1">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="px-3 py-2 mt-3 text-white border-0" style="background: linear-gradient(to right, rgb(255,157,8), rgb(255,123,28), rgb(255,91,46));">8 Months</button>
+                    </div>
+                    <div class="tab-pane fade" id="pro">
+                        <div class="accordion" id="main-accor2">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <button class="accordion-button accordion-button-default" data-bs-toggle="collapse"
+                                        data-bs-target="#accor6">HTML 5</button>
+                                </div>
+                                <div class="collapse accordion-collapse" id="accor6" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Basic</li>
+                                                    <li class="list-item">Headings</li>
+                                                    <li class="list-item">Quotations</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Elements</li>
+                                                    <li class="list-item">Paragrahs</li>
+                                                    <li class="list-item">Comments</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Attributes</li>
+                                                    <li class="list-item">Formatting</li>
+                                                    <li class="list-item">Colors</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor7">CSS 3</button>
+                                <div class="collapse accordion-collpase" id="accor7" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Comments</li>
+                                                    <li class="list-item">Borders</li>
+                                                    <li class="list-item">Height/Width</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Colors</li>
+                                                    <li class="list-item">Margins</li>
+                                                    <li class="list-item">Box Model</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Backgrounds</li>
+                                                    <li class="list-item">Padding</li>
+                                                    <li class="list-item">Outline</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor8">Bootstrap 5</button>
+                                <div class="collapse accordion-collpase" id="accor8" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Breakpoints</li>
+                                                    <li class="list-item">Columns</li>
+                                                    <li class="list-item">Alerts</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Containers</li>
+                                                    <li class="list-item">Gutters</li>
+                                                    <li class="list-item">Badge</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Grid</li>
+                                                    <li class="list-item">Accordion</li>
+                                                    <li class="list-item">Breadcrumb</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor9">Javascript</button>
+                                <div class="collapse accordion-collpase" id="accor9" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor10">Github</button>
+                                <div class="collapse accordion-collpase" id="accor10" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor11">React Js</button>
+                                <div class="collapse accordion-collpase" id="accor11" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor12">PHP</button>
+                                <div class="collapse accordion-collpase" id="accor12" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor13">MySQL</button>
+                                <div class="collapse accordion-collpase" id="accor13" data-bs-parent="#main-accor">
+                                    <div class="accordion-body">
+                                        <p>2 Projects related to the course</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor14">Ajax</button>
+                                <div class="collapse accordion-collpase" id="accor14" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor-g">Json</button>
+                                <div class="collapse accordion-collpase" id="accor-g" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor-h">Laravel framework</button>
+                                <div class="collapse accordion-collpase" id="accor-h" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor-i">Laravel framework</button>
+                                <div class="collapse accordion-collpase" id="accor-i" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor-j">Woo-Commerce</button>
+                                <div class="collapse accordion-collpase" id="accor-j" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor-k">cPanel</button>
+                                <div class="collapse accordion-collpase" id="accor-k" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor-l">portfolio</button>
+                                <div class="collapse accordion-collpase" id="accor-l" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor-m">Visual Studio</button>
+                                <div class="collapse accordion-collpase" id="accor-m" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor-n">Project Setup</button>
+                                <div class="collapse accordion-collpase" id="accor-n" data-bs-parent="#main-accor2">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="px-3 py-2 mt-3 text-white border-0" style="background: linear-gradient(to right, rgb(255,157,8), rgb(255,123,28), rgb(255,91,46));">1 Year</button>
+                    </div>
+                    <div class="tab-pane fade" id="master">
+                        <div class="accordion" id="main-accor3">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <button class="accordion-button accordion-button-default" data-bs-toggle="collapse"
+                                        data-bs-target="#accor15">HTML 5</button>
+                                </div>
+                                <div class="collapse accordion-collapse" id="accor15" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Basic</li>
+                                                    <li class="list-item">Headings</li>
+                                                    <li class="list-item">Quotations</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Elements</li>
+                                                    <li class="list-item">Paragrahs</li>
+                                                    <li class="list-item">Comments</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Attributes</li>
+                                                    <li class="list-item">Formatting</li>
+                                                    <li class="list-item">Colors</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor16">CSS 3</button>
+                                <div class="collapse accordion-collpase" id="accor16" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Comments</li>
+                                                    <li class="list-item">Borders</li>
+                                                    <li class="list-item">Height/Width</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Colors</li>
+                                                    <li class="list-item">Margins</li>
+                                                    <li class="list-item">Box Model</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Backgrounds</li>
+                                                    <li class="list-item">Padding</li>
+                                                    <li class="list-item">Outline</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor17">Bootstrap 5</button>
+                                <div class="collapse accordion-collpase" id="accor17" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Breakpoints</li>
+                                                    <li class="list-item">Columns</li>
+                                                    <li class="list-item">Alerts</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Containers</li>
+                                                    <li class="list-item">Gutters</li>
+                                                    <li class="list-item">Badge</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">Grid</li>
+                                                    <li class="list-item">Accordion</li>
+                                                    <li class="list-item">Breadcrumb</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor18">Javascript</button>
+                                <div class="collapse accordion-collpase" id="accor18" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor19">jQuery</button>
+                                <div class="collapse accordion-collpase" id="accor19" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor20">React Js</button>
+                                <div class="collapse accordion-collpase" id="accor20" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor21">Angular</button>
+                                <div class="collapse accordion-collpase" id="accor21" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor22">Node Js</button>
+                                <div class="collapse accordion-collpase" id="accor22" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <p>2 Projects related to the course</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor23">Bulma</button>
+                                <div class="collapse accordion-collpase" id="accor23" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor24">Sass</button>
+                                <div class="collapse accordion-collpase" id="accor24" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor25">Tailwind</button>
+                                <div class="collapse accordion-collpase" id="accor25" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor26">PHP</button>
+                                <div class="collapse accordion-collpase" id="accor26" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor27">MySQL</button>
+                                <div class="collapse accordion-collpase" id="accor27" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <p>2 Projects related to the course</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor28">Ajax</button>
+                                <div class="collapse accordion-collpase" id="accor28" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor29">Json</button>
+                                <div class="collapse accordion-collpase" id="accor29" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor30">Laravel framework</button>
+                                <div class="collapse accordion-collpase" id="accor30" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor31">Codeignitor Framework</button>
+                                <div class="collapse accordion-collpase" id="accor31" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor32">Wordpress (CMS)</button>
+                                <div class="collapse accordion-collpase" id="accor32" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor33">portfolio</button>
+                                <div class="collapse accordion-collpase" id="accor33" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor34">cPanel</button>
+                                <div class="collapse accordion-collpase" id="accor34" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor35">Web Hosting</button>
+                                <div class="collapse accordion-collpase" id="accor35" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor36">Visual Studio</button>
+                                <div class="collapse accordion-collpase" id="accor36" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor37">Github</button>
+                                <div class="collapse accordion-collpase" id="accor37" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor38">Project Setup</button>
+                                <div class="collapse accordion-collpase" id="accor38" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor39">Express JS</button>
+                                <div class="collapse accordion-collpase" id="accor39" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor40">Mongo DB</button>
+                                <div class="collapse accordion-collpase" id="accor40" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor41">Java Advance</button>
+                                <div class="collapse accordion-collpase" id="accor41" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor42">Resume</button>
+                                <div class="collapse accordion-collpase" id="accor42" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button accordion-button-focus" data-bs-toggle="collapse"
+                                    data-bs-target="#accor43">Woo-Commerce</button>
+                                <div class="collapse accordion-collpase" id="accor43" data-bs-parent="#main-accor3">
+                                    <div class="accordion-body">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Introduction</li>
+                                                    <li class="list-item">JS Statements</li>
+                                                    <li class="list-item">JS Variables</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Where To</li>
+                                                    <li class="list-item">JS Syntax</li>
+                                                    <li class="list-item">JS Let</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <ul class="list-unstyled">
+                                                    <li class="list-item">JS Output</li>
+                                                    <li class="list-item">JS Comments</li>
+                                                    <li class="list-item">JS Const</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="px-3 py-2 mt-3 text-white border-0" style="background: linear-gradient(to right, rgb(255,157,8), rgb(255,123,28), rgb(255,91,46));">2 Years</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid demo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-white text-center">
+                    <h3>HAVE ANY QUERY?</h3>
+                    <h2>I WANT TO START WITH FREE DEMO!</h2>
+                    <p>We provide free demo classes in Delhi for the students that help in understanding the course and
+                        modules covered. Students can easily enroll for a demo session by filling up the below form</p>
+                    <h2><a href="tel: +91-7210018919" class="text-decoration-none text-white">CALL @ +91-7210018919</a>
+                    </h2>
+                    <button data-bs-toggle="modal" data-bs-target="#demo-modal" class="demo-btn">Book a Demo</button>
+                    <div class="modal" id="demo-modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header text-black">
+                                    <h4>Get A Free Demo Session!</h4>
+                                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="" method="post">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label for="name" class="form-label text-black">Name</label>
+                                                <input type="text" name="name" id="name" class="form-control">
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="mobile" class="form-label text-black">Mobile Number</label>
+                                                <input type="tel" name="mobile" id="mobile" class="form-control">
+                                            </div>
+                                        </div>
+                                        <label for="course" class="form-label text-black mt-3">Choose Course</label>
+                                        <select name="course" id="course" class="form-select">
+                                            <option value="" disabled selected>Select Course</option>
+                                            <option value="webdesigning">Web Designing</option>
+                                            <option value="webdeveleopment">Web Development</option>
+                                            <option value="phpdeveleopment">Php Development</option>
+                                            <option value="digitalmarketing">Digital Marketing</option>
+                                            <option value="fullstackdevelopment">Full Stack Development</option>
+                                            <option value="seo">SEO</option>
+                                            <option value="htmlandcss">HTML and CSS</option>
+                                            <option value="wordpress">Wordpress</option>
+                                            <option value="jquery">JQuery</option>
+                                            <option value="javascript">Javascript</option>
+                                            <option value="bootstrap">Bootstrap</option>
+                                            <option value="googleadword">Google Adword</option>
+                                            <option value="coreldrw">Corel Draw</option>
+                                            <option value="cpanel">CPanel</option>
+                                            <option value="angulardevelopment">Angular Development</option>
+                                            <option value="php">Php</option>
+                                            <option value="reactjs">React Js</option>
+                                            <option value="python">Python</option>
+                                            <option value="mongodb">Mongo DB</option>
+                                            <option value="nodejs">Node Js</option>
+                                            <option value="mernstack">Mern stack</option>
+                                            <option value="meanstack">Mean Stack</option>
+                                            <option value="json">JSON</option>
+                                            <option value="laravel">Laravel</option>
+                                            <option value="mysql">MYSQL</option>
+                                            <option value="javaprogram">Java Program</option>
+                                            <option value="codeinitorframework">Codeignitor Framework</option>
+                                            <option value="graphicsdesign">Graphics Design</option>
+                                        </select>
+                                        <label for="message" class="form-label text-black mt-3">Message</label>
+                                        <textarea name="message" id="" cols="30" rows="5"
+                                            class="form-control"></textarea>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary mx-auto">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-12 text-center mb-3">
+                <h3>Full Stack Developer Course</h3>
+            </div>
+            <div class="col-12 text-secondary">
+                <p class="mb-3"><b>Full-stack development –</b> the art of mastering both front-end and back-end technologies to become a versatile tech professional. Full-stack developers master various technologies, frameworks, and databases, ensuring they can handle every aspect of the development process, from designing user interfaces to managing databases and servers.</p>
+                <h3 class="mb-3 text-dark">Features of Our Full-Stack Development Course</h3>
+                <p class="mb-3">Our full-stack development course is designed to provide a holistic understanding of the entire web development process. It covers both front-end and back-end technologies, ensuring that you graduate with a well-rounded skill set. Key features include hands-on projects, real-world applications, and a curriculum that evolves with industry trends. You can expect interactive learning modules, mentorship, and projects that mirror the challenges of the professional world, ensuring you graduate not just with knowledge but with practical expertise that sets you apart in the job market.</p>
+                <h3 class="mb-3 text-dark">Who can Apply for the Course</h3>
+                <p class="mb-3">Our full-stack development course is designed for</p>
+                <ul class=" mb-3text-dark">
+                    <li class="mb-2">Individuals with a passion for coding and a desire to master the intricacies of web development.</li>
+                    <li class="mb-2">Whether you are a 12th pass or under-graduate.</li>
+                    <li class="mb-2">Whether you are a recent graduate.</li>
+                    <li class="mb-2">A working professional seeking a career change.</li>
+                    <li>someone simply eager to delve into the world of coding.</li>
+                </ul>
+                <p class="mb-3">Our course is tailored to suit all levels of expertise. The only prerequisites are determination, a basic understanding of programming concepts, and the enthusiasm to learn and grow in a dynamic field.</p>
+                <h3 class="mb-3 text-dark">The Role of a Full-Stack Developer</h3>
+                <p class="mb-3">A full-stack developer is the backbone of web development, proficient in both client-side and server-side technologies. They play a crucial role in designing, implementing, and maintaining web applications, ensuring seamless user experiences. Full-stack developers collaborate with cross-functional teams, bridging the gap between front-end and back-end development. This role demands adaptability, problem-solving skills, and a deep understanding of various programming languages and frameworks. Essential Skills to Master: To excel as a full-stack developer, mastering a diverse set of skills is essential. Proficiency in languages like HTML, CSS, JavaScript, Bootstrap and server-side scripting languages like PHP is a must. Database management, version control, and knowledge of web development frameworks are also crucial.</p>
+                <h3 class="mb-3 text-dark">Essential Tools for Full-Stack Development</h3>
+                <p class="mb-3">Equip yourself with the right tools to streamline your full-stack development journey. Integrated Development Environments (IDEs), version control systems like Git, and collaboration platforms enhance productivity. Frameworks such as Laravel, CodeIgniter are Elegant syntax, powerful features, Lightweight, simplicity, speed-focused PHP framework for rapid development. Stay updated on industry tools and technologies to remain agile in this ever-evolving field.</p>
+                <h3 class="mb-3 text-dark">Course Certification & Placement Opportunities</h3>
+                <p class="mb-3">Upon successfully completing our full-stack development course, you will receive a certification that validates your skills and knowledge. Our industry-recognized certification opens doors to a multitude of job opportunities. Our dedicated placement assistance ensures you are well-prepared for the job market, connecting you with potential employers and helping you showcase your portfolio. Our alumni have gone on to secure positions in reputable companies, thanks to the comprehensive training and real-world projects they undertook during the course.</p>
+                <h3 class="mb-3 text-dark">Conclusion</h3>
+                <p>Embark on your full-stack development journey with us, and unlock the door to a thriving tech career. Our course offers a unique blend of theoretical knowledge and hands-on experience, preparing you for the challenges and opportunities in the dynamic world of web development. Apply today to redefine your future as a skilled and sought-after full-stack developer.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-4" style="background-color: rgb(0,11,114);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12 text-white">
+                    <h3 class="mb-3">Why you Choose SITHUB®</h3>
+                    <p class="mb-3">We prefer the quality in our Training. So here is the best for you. It will turn you from a student to a professional designer. Let us help you to build your career and change your life.</p>
+                    <p class="mb-3">Extra time for practice.</p>
+                    <p class="mb-3">Project Based Training.</p>
+                    100% Practical Training with Experts.
+                    <p class="mb-3">Internship facility after completing course.</p>
+                    <p class="mb-3">Placement Assistance.</p>
+                    <p class="mb-3">Backup Classes Available, so not to worry in case you miss few classes.</p>
+                    <p class="mb-3">Take a demo & feel the diffrence in training.</p>
+                    <p class="mb-3">Get 1 year assistance for the course and Job.</p>
+                    <p class="mb-3">Fees Installment structure available.</p>
+                    <p class="mb-3">Online and classroom training available.</p>
+                    <p>Now, grab all these facilities with SITHUB® Web Designing Course in Dwarka, Uttam Nagar, Vikaspuri, Nawada, Najafgarh, Delhi.</p>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <img src="https://www.sithub.in/Admin/CourseImages/040124074215full-stack-sithub.png" alt="" width="100%" class="mt-5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-4" style="background-color: rgb(245,245,245);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <video src="https://www.sithub.in/pages/assets/images/banner/about-us-top.mp4" width="100%" playsinline autoplay muted loop></video>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h3 class="text-primary mb-3">Future Scope and opportunities</h3>
+                    <p class="mb-3 text-secondary">Infinite future scopes and opportunities exist in full stack. Full stack development is a highly in-demand skill and a promising career opportunity. By this you can work in nearly every industry, from the IT sector to product, and service-based industries. As a full stack developer, you can work as: Front-end Developer ,Back-end Developer, Web Developer, Software Developer, Technical Lead/Manager, Full Stack Developer.</p>
+                    <div class="d-flex justify-content-between" style="color: rgb(0,11,114);">
+                        <ul class="list-unstyled">
+                            <li class="mb-2">Mobile Development Companies</li>
+                            <li class="mb-2">Insurance Companies</li>
+                            <li class="mb-2">Businesses & Educational Institutes</li>
+                            <li>Marketing firms & Manufacturers</li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">Publishing & Department stores</li>
+                            <li class="mb-2">Government Organizations</li>
+                            <li>Freelancer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-2 text-white" style="background-color: rgb(0,11,114);">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>Web Design Certification Course FAQs</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-12 text-secondary border pt-4">
+                <p class="fw-bold mb-2">1. Does SITHUB offer job assistance?</p>
+                <p class="mb-3">Yes, we provide job placement when you complete your course, and our mentors prepare you for an interview.</p>
+                <p class="fw-bold mb-2">2. What is the duration of this course?</p>
+                <p class="mb-3">We have different level of courses in full stack development like, Web development 3 months, Intermediate Level 8 months, Professional Level 1 year, and the Master level 2 yrs.</p>
+                <p class="fw-bold mb-2">3. Can I get an internship?</p>
+                <p class="mb-3">Yes, when you complete the course, you can ask for a paid internship at SITHUB.</p>
+                <p class="fw-bold mb-2">4. Can I get online full stack classes?</p>
+                <p class="mb-3">If you can’t come to the institute, then you can ask for online full stack classes.</p>
+                <p class="fw-bold mb-2">5. Where is SITHUB?</p>
+                <p class="mb-3">Address: 32 Gramsabha, Dwarka Mor Metro Station, near Pillar No. 774, Sewak Park, Uttam Nagar, New Delhi, Delhi 110059</p>
+                <p class="fw-bold mb-2">5. Do I get a certificate for this full stack course?</p>
+                <p class="mb-3">On completion of a full stack development course , you will get a professional certificate from SITHUB Institute.</p>
+                <p class="fw-bold mb-2">5. What is the timing of the course?</p>
+                <p class="mb-3">The course timing is 7 a.m. to 6 p.m.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid statistics">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>SITHUB in Numbers</h3>
+                    <p>Our learner community's unwavering trust and confidence continue to propel our success story
+                        forward.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                        <div class="statistics-numbers">
+                            <h3>2.5M+</h3>
+                            <p>Learners On YouTube</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                        <div class="statistics-numbers--special">
+                            <h3>150K+</h3>
+                            <p>Aspirants Trained</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                        <div class="statistics-numbers">
+                            <h3>20+</h3>
+                            <p>Training Domains</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                        <h3>4.8/5</h3>
+                        <p>Average Learner Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid companies py-4">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h3>Our Learners Work at Global Companies & Startups</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <div class="row">
+                                <div class="col-3 text-center">
+                                    <div>
+                                        <img src="https://www.sithub.in/images/wipro.webp" alt="" width="45%">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div>
+                                        <img src="https://www.sithub.in/images/thrillophilia.webp" alt="" width="80%">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div>
+                                        <img src="https://www.sithub.in/images/tcs.webp" alt="" width="80%">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div>
+                                        <img src="https://www.sithub.in/images/capgemini.webp" alt="" width="80%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <div class="row py-1">
+                                <div class="col-3">
+                                    <div>
+                                        <img src="https://www.sithub.in/images/capgemini.webp" alt="" width="80%">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div>
+                                        <img src="https://www.sithub.in/images/hcl.webp" alt="" width="80%">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div>
+                                        <img src="https://www.sithub.in/images/ibm.webp" alt="" width="80%">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div>
+                                        <img src="https://www.sithub.in/images/zoho.webp" alt="" width="80%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid review">
+        <div class="container bg-white bg-opacity-50 rounded-4 py-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>Our Outstanding Review on Google</h3>
+                    <div class="google-bar d-flex justify-content-between bg-white rounded-3 pt-3 my-4">
+                        <ul class="list-inline ms-2">
+                            <li class=" list-inline-item me-2">
+                                <img src="https://www.sithub.in/images/icons8-google-48.webp" alt="" width="25px">
+                            </li>
+                            <li class=" list-inline-item me-2"><b>4.8</b></li>
+                            <li class="list-inline-item text-secondary">658 reviews</li>
+                        </ul>
+                        <a
+                            href="https://www.google.com/search?hl=en-IN&gl=in&q=32+Gramsabha,+SITHUB,+Dwarka+Mor+Metro+Station,+near+by+Pillar+No.+774,+Sewak+Park,+Uttam+Nagar,+New+Delhi,+Delhi+110059&ludocid=10236647457311412167&lsig=AB86z5VQji4ipaYY788VaW9Ljcqv">
+                            <button class="review-btn me-2"><b>Read a Review</b></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div
+                        class="item review-box text-secondary bg-white bg-opacity-75 border border-white rounded-1 p-2">
+                        <div class="mb-2">
+                            <span class="google-img d-inline-block" style="width: 25px;">
+                                <img src="https://www.sithub.in/images/icons8-google-48.webp" alt="">
+                            </span>
+                            <span>2 Months Ago</span>
+                        </div>
+                        <p>I am sneha doing 8 months full stack development course from here and my experience is great
+                            with my trainer sandeep sir, they teach me many languages, frameworks, libraries practically
+                            and also clear my doubts in every concepts.</p>
+                        <a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsemJ5WndRRRAB!2m1!1s0x0:0x8e0fe0a057f3cfc7!3m1!1s2@1:CIHM0ogKEICAgIClzbyZwQE%7CCgwIuZOBqwYQ-L-togM%7C?hl=en-US"
+                            class="text-decoration-none mt-2" target="blank">Show more</a>
+                        <div class="review-box-profile mt-4">
+                            <span class="review-box-img d-inline-block">
+                                <img src="https://www.sithub.in/images/sneha.webp" alt="" width="100%">
+                            </span>
+                            <b>Sneha Pandey</b>
+                        </div>
+                    </div>
+                    <div
+                        class="item review-box text-secondary bg-white bg-opacity-75 border border-white rounded-1 p-2">
+                        <div class="mb-2">
+                            <span class="google-img d-inline-block" style="width: 25px;">
+                                <img src="https://www.sithub.in/images/icons8-google-48.webp" alt="">
+                            </span>
+                            <span>A month Ago</span>
+                        </div>
+                        <p>I am hemant from Delhi ncr. I found SITHUB in nearby my location where I learned so much
+                            about seo, smo and more with professional teacher like sandeep sir and I highly recommend
+                            everyone you join SITHUB. Learn with 100% Practical</p>
+                        <a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsMmZYTnRBRRAB!2m1!1s0x0:0x8e0fe0a057f3cfc7!3m1!1s2@1:CIHM0ogKEICAgICl2fXNtAE%7CCgwIlKj2qgYQiLezgAM%7C?hl=en-US"
+                            class="text-decoration-none mt-2" target="blank">Show more</a>
+                        <div class="review-box-profile mt-4">
+                            <span class="review-box-img d-inline-block">
+                                <img src="https://www.sithub.in/images/hemant.webp" alt="" width="100%">
+                            </span>
+                            <b>Hemant Kumar</b>
+                        </div>
+                    </div>
+                    <div
+                        class="item review-box text-secondary bg-white bg-opacity-75 border border-white rounded-1 p-2">
+                        <div class="mb-2">
+                            <span class="google-img d-inline-block" style="width: 25px;">
+                                <img src="https://www.sithub.in/images/icons8-google-48.webp" alt="">
+                            </span>
+                            <span>2 Months Ago</span>
+                        </div>
+                        <p>I am taniya and doing digital marketing training here and i liked the training, the study
+                            material is best and trainers also. i also recommend to others to join this digital
+                            marketing course here. they teach me blogging, seo, ads and more.</p>
+                        <a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsMmZYTnRBRRAB!2m1!1s0x0:0x8e0fe0a057f3cfc7!3m1!1s2@1:CIHM0ogKEICAgICl2fXNtAE%7CCgwIlKj2qgYQiLezgAM%7C?hl=en-US"
+                            class="text-decoration-none mt-2" target="blank">Show more</a>
+                        <div class="review-box-profile mt-4">
+                            <span class="review-box-img d-inline-block">
+                                <img src="https://www.sithub.in/images/tanya.webp" alt="" width="100%">
+                            </span>
+                            <b>Taniya Rawat</b>
+                        </div>
+                    </div>
+                    <div
+                        class="item review-box text-secondary bg-white bg-opacity-75 border border-white rounded-1 p-2">
+                        <div class="mb-2">
+                            <span class="google-img d-inline-block" style="width: 25px;">
+                                <img src="https://www.sithub.in/images/icons8-google-48.webp" alt="">
+                            </span>
+                            <span>A Month Ago</span>
+                        </div>
+                        <p>I am Abu bakar ansari and I am doing a one year full stack developer course at SITHUB
+                            institute. My trainer Prashant sir is a very good teacher and they teach me many languages
+                            for example html, css, javascript, bootstrap etc.</p>
+                        <a href="https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsOFpmYlp3EAE!2m1!1s0x0:0x8e0fe0a057f3cfc7!3m1!1s2@1:CIHM0ogKEICAgICl8ZfbZw%7CCgwIoaXxqgYQkPiFygE%7C?hl=en-US"
+                            class="text-decoration-none mt-2" target="blank">Show more</a>
+                        <div class="review-box-profile mt-4">
+                            <span class="review-box-img d-inline-block">
+                                <img src="https://www.sithub.in/images/abu.webp" alt="" width="100%">
+                            </span>
+                            <b>Abu Bakar</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row mb-4">
+            <div class="col-12 text-center text-primary">
+                <h3>-- You Can start with --</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <table class="table schedule-table text-center table-bordered">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="text-white"><b>For Students</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">Regular Batch Time</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>Daily 1 hour</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Morning</b></td>
+                            <td><b>Evening</b></td>
+                        </tr>
+                        <tr>
+                            <td>In Between 09:30am to 01:30pm</td>
+                            <td>In Between 02:00pm to 06:00pm</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>Hedkey India Pvt. Ltd.</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <table class="table schedule-table text-center table-bordered">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="text-white"><b>For Working Professionals</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">Regular Batch Time</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>Daily 1 hour</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Morning</b></td>
+                            <td><b>Evening</b></td>
+                        </tr>
+                        <tr>
+                            <td>In Between 07:00am to 01:30pm</td>
+                            <td>In Between 02:00pm to 06:00pm</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>Hedkey India Pvt. Ltd.</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <table class="table schedule-table text-center table-bordered">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="text-white"><b>For Weekend Students</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">Only Saturday</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>Flexible Class hour</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Morning</b></td>
+                            <td><b>Evening</b></td>
+                        </tr>
+                        <tr>
+                            <td>In Between 07:00am to 01:30pm</td>
+                            <td>In Between 02:00pm to 06:00pm</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>Hedkey India Pvt. Ltd.</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ps-5" style="background-color: rgb(244,244,244);">
+        <div class="row">
+            <div class="col-12 col-lg-6 mt-3">
+                <h3 class="mb-3">Contact Option</h3>
+                <p class="mb-3">Want to know more about our courses, feel free to ask with our specialists. Our team is here to guide. You may reach us through our contact details provided below.</p>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="https://www.sithub.in/pages/assets/images/contact-svg/icons8-headphone-64.png" alt="" width="100%">
+                    </div>
+                    <div class="col-10">
+                        <p class="fw-bold mb-2">+91 7210018919</p>
+                        <p>Call Now</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="https://www.sithub.in/pages/assets/images/contact-svg/icons8-mail-48.png" alt="" width="100%">
+                    </div>
+                    <div class="col-10">
+                        <p class="fw-bold mb-2">info@sithub.in</p>
+                        <p>Email ID</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="https://www.sithub.in/pages/assets/images/contact-svg/icons8-whatsapp-80.png" alt="" width="100%">
+                    </div>
+                    <div class="col-10">
+                        <p class="fw-bold mb-2">+91 7210018919</p>
+                        <p>Whatsapp Number</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 pb-3" style="background-color: rgb(0,11,114);">
+                <form action="" method="post" class="bg-white bg-opacity-50 px-3 py-5 rounded-4 mt-4">
+                    <h3 class="text-white mb-4">Book your seat for Free Demo Call @7210018919</h3>
+                    <input type="text" name="name" placeholder="Your Name" class="form-control"><br>
+                    <input type="text" name="mobilenumber" placeholder="Your Mobile No." class="form-control"><br>
+                    <textarea name="enquiry" id="" cols="30" rows="3" placeholder="Enter Your Enquiry"
+                        class="form-control"></textarea><br>
+                    <input type="submit" id="submit" class="form-control text-white"
+                        style="background: linear-gradient(to right, rgb(255,157,8), rgb(255,124,27), rgb(255,91,46));">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h3 class="text-primary">Payment Options</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-6 text-center">
+                <a href="#">
+                    <img src="https://www.sithub.in/pages/assets/images/payment/rupees2.png" alt="" width="65%">
+                </a>
+                <h4 class="mt-3">Cash</h4>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-6 text-center">
+                <a href="#">
+                    <img src="https://www.sithub.in/pages/assets/images/payment/phone-pay2.png" alt="" width="65%">
+                </a>
+                <h4 class="mt-3">Phone Pay</h4>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-6 text-center">
+                <a href="#">
+                    <img src="https://www.sithub.in/pages/assets/images/payment/google-pay2.jpg" alt="" width="65%">
+                </a>
+                <h4 class="mt-3">Google Pay</h4>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-6 text-center">
+                <a href="#">
+                    <img src="https://www.sithub.in/pages/assets/images/payment/rozarpay.png" alt="" width="65%">
+                </a>
+                <h4 class="mt-3">RazorPay</h4>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-6 text-center">
+                <a href="#">
+                    <img src="https://www.sithub.in/pages/assets/images/payment/banking2.png" alt="" width="65%">
+                </a>
+                <h4 class="mt-3">Net Banking</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer-menu py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-brand" style="width: 190px;">
+                        <img src="https://www.sithub.in/Admin/WebsiteImages/060324110713sithub-logo1.svg" alt=""
+                            width="100%">
+                    </div>
+                    <p>Welcome to <b>Sithub</b>, is an IT Training Center providing training in IT professional Courses.
+                        Make your career with the updated content, designed by our IT experts. Sithub is an ISO
+                        Certified Institute and is also registered by the Government of India.</p>
+                    <div class="footer-socialmedia-icons">
+                        <a href="https://www.facebook.com/sithubtraining" target="blank" class="text-decoration-none">
+                            <img src="https://www.sithub.in/assets/images/contact/facebook.png" alt="" width="50px">
+                        </a>
+                        <a href="https://www.instagram.com/sithubtraining/" target="blank" class="text-decoration-none">
+                            <img src="https://www.sithub.in/assets/images/contact/icons8-instagram-48.png" alt=""
+                                width="50px">
+                        </a>
+                        <a href="https://www.youtube.com/@sithubtraining" target="blank" class="text-decoration-none">
+                            <img src="https://www.sithub.in/assets/images/contact/youtube.png" alt="" width="50px">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h2>USEFUL <span class="text-primary fs-2">LINKS</span></h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="feedback.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Share Feedback
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="career.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Career With Us
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="student-internship.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Internship
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="student-placement.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Placement
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="reviews.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Reviews
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#demo-modal">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Demo Class
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="latest-jobs.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Find Latest Jobs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h2>HOT <span class="text-primary fs-2">COURSES</span></h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="web-designing.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Web Designing Course
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="digital-marketing.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Digital Marketing Course
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="python.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Python Developer Course
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="full-stack-development.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Full Stack Developer Course
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="html-css.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                HTML and CSS Course
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="angular-development.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Angular Development Course
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="seo.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                SEO Course
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h2>HOT <span class="text-primary fs-2">COURSES</span></h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-location-dot"></i>
+                                ADDRESS <br>
+                                Sithub, 32, Gramsabha Sewak Park Uttam Nagar,Near by Dwarka Mod Metro Station, Pillar
+                                No. 774, New Delhi- 110059.
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="tel: +91-7210018919" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-phone"></i>
+                                PHONE <br>
+                                +91-7210018919
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="mailto: info@sithub.in" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-envelope"></i>
+                                EMAIL
+                                info@sithub.in
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 text-lg-start text-md-start text-sm-start">
+                    <p>
+                        Copyright © 2023, Designed And Maintained By <a href="https://www.hedkeyindia.com/"
+                            class="text-decoration-none">Hedkey India Pvt Ltd</a>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 text-lg-end text-md-start text-sm-start">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="privacy-policy.html" class="text-decoration-none footer-link">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="terms-conditions.html" class="text-decoration-none footer-link">Terms &
+                                Conditions</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="about.html" class="text-decoration-none footer-link">About Us </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="sitemap.html" class="text-decoration-none footer-link">Sitemap </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="join-now.html" class="text-decoration-none footer-link">Help Desk</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=917210018919&text" target="blank">
+        <button class="whatsapp-fixed d-lg-block d-md-block d-sm-none">
+            WhatsApp Now
+            <img src="https://www.sithub.in/images/whatsapp-icon.webp" alt="" width="25px">
+        </button>
+    </a>
+    <div class="container-fluid phone-whatsapp-fixed d-lg-none d-md-none d-sm-block bg-white">
+        <div class="row">
+            <a href="tel: +91-7210018919"
+                class="col-6 text-decoration-none text-center text-black border-end border-black py-3">
+                Phone
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=917210018919&text"
+                class="col-6 text-decoration-none text-center text-black py-3" target="_blank">
+                WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="../OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

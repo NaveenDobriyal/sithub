@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .short-term--hero {
+            background-image: url(images/sithub11.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 270px;
+        }
+
+        .header {
+            background-image: initial;
+            font-size: 17px;
+        }
+
+        .navbar-outer {
+            background-image: initial;
+        }
+
+        .navbar-moven {
+            position: fixed;
+            top: 0px;
+            z-index: 2;
+            background-color: rgb(0, 11, 114);
+        }
+
+        .navbar-untouched {
+            position: static;
+            background-image: initial;
+        }
+
+        #navbar a {
+            font-size: 17px;
+        }
+
+        .card p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid short-term--hero px-0">
+        <div class="container-fluid header" id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between pt-3">
+                        <ul class="list-inline">
+                            <li class="list-inline-item me-2">
+                                <a href="mailto: info@sithub.in" class="text-decoration-none text-white">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span class="d-lg-inline d-md-inline d-sm-none">info@sithub.in</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item me-2">
+                                <a href="tel: +91-7210018919" class="text-decoration-none text-white">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span class="d-lg-inline d-md-inline d-sm-none">+91-7210018919</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="index.html" class="text-decoration-none text-white">Pay Now</a>
+                            </li>
+                        </ul>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="verify-certificate.html" class="text-decoration-none text-white">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span class="d-xl-inline d-lg-block d-md-block d-sm-none">
+                                        <span class="d-xl-inline d-lg-inline d-md-block d-sm-none">Verify</span>
+                                        Certificate
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ms-2">
+                                <a href="login.html" class="text-decoration-none text-white">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span class="d-xl-inline d-lg-block d-md-inline d-sm-none">Login</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ms-2">
+                                <a href="https://www.facebook.com/sithubtraining" target="blank"
+                                    class="text-decoration-none text-white">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ms-2">
+                                <a href="https://www.instagram.com/sithubtraining/" target="blank"
+                                    class="text-decoration-none text-white">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ms-2">
+                                <a href="https://www.youtube.com/@sithubtraining" target="blank"
+                                    class="text-decoration-none text-white">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid navbar-outer" id="navbar-outer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="navbar navbar-expand-lg">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="https://www.sithub.in/Admin/WebsiteImages/060324110713sithub-logo1.svg" alt=""
+                                    width="170px">
+                            </a>
+                            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#nav">
+                                <i class="fa-solid fa-bars text-white"></i>
+                            </button>
+                            <div class="offcanvas offcanvas-end" id="nav" data-bs-backdrop="false">
+                                <div class="offcanvas-header">
+                                    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="nav navbar-nav ms-auto d-none d-lg-flex">
+                                        <li class="nav-item nav-item--first me-4 dropdown-origin mt-2">
+                                            Industrial Training
+                                            <i class="fa-solid fa-angle-down"></i>
+
+                                            <ul class="list-unstyled dropdown">
+
+                                                <li class="mega-dropdown-origin">
+                                                    <a href="professional-courses.html">
+                                                        Professional Courses
+                                                        <i class="fa-solid fa-angle-right"></i>
+                                                    </a>
+                                                    <ul class="list-unstyled mega-dropdown">
+                                                        <li><a href="web-designing.html">Web Designing</a></li>
+                                                        <li><a href="web-development.html">Web Development</a></li>
+                                                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                                                        <li><a href="full-stack-development.html">Full Stack
+                                                                Development</a>
+                                                        </li>
+                                                        <li><a href="mern-stack.html">Mern Stack</a></li>
+                                                        <li><a href="mean-stack.html">Mean Stack</a></li>
+                                                        <li><a href="graphics-design.html">Graphics Design</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="mega-dropdown-origin">
+                                                    <a href="short-term-courses.html">
+                                                        Short Term Courses
+                                                        <i class="fa-solid fa-angle-right"></i>
+                                                    </a>
+                                                    <ul class="list-unstyled mega-dropdown">
+                                                        <li>
+                                                            <a href="seo.html">SEO</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="html-css.html">HTML and CSS</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="wordpress.html">Wordpress</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="jquery.html">JQuery</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript.html">Javascript</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="bootstrap.html">Bootstrap</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="corel-draw.html">Corel Draw</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="angular-development.html">Angular Development</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="php.html">Php</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="react-js.html">React Js</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="python.html">Python</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="mongo-db.html">Mongo DB</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                        <li class="nav-item me-4 dropdown-origin mt-2">
+                                            Student
+                                            <i class="fa-solid fa-angle-down"></i>
+                                            <ul class="list-unstyled dropdown">
+                                                <li>
+                                                    <a href="admission-criteria.html">Admission Criteria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="student-internship.html">Student Internship</a>
+                                                </li>
+                                                <li>
+                                                    <a href="student-placement.html">Student Placement</a>
+                                                </li>
+                                                <li>
+                                                    <a href="reviews.html">Reviews</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item me-4 dropdown-origin mt-2">
+                                            Educator
+                                            <i class="fa-solid fa-angle-down"></i>
+                                            <ul class="list-unstyled dropdown">
+                                                <li>
+                                                    <a href="company-internship.html">Company Internship</a>
+                                                </li>
+                                                <li>
+                                                    <a href="company-placement.html">Company Placement</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item me-4">
+                                            <a href="gallery.html" class="nav-link text-decoration-none fw-bold">
+                                                Gallery
+                                            </a>
+                                        </li>
+                                        <li class="nav-item me-4">
+                                            <a href="blogs.html" class="nav-link text-decoration-none fw-bold">
+                                                Blogs
+                                            </a>
+                                        </li>
+                                        <li class="nav-item me-4">
+                                            <a href="contact.html" class="nav-link text-decoration-none fw-bold">
+                                                Contact
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="tel: +91-7210018919">
+                                                <button class="navbar-btn">+91-7210018919</button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled d-lg-none d-md-block d-sm-block ps-3">
+                                        <li class="mb-3">
+                                            Industrial Training
+                                            <i class="fa-solid fa-caret-down ms-3" data-bs-toggle="collapse"
+                                                data-bs-target="#industrial"></i>
+                                            <div class="collapse" id="industrial">
+                                                <ul class="list-unstyled ps-3 mt-3">
+                                                    <li class="mb-3">
+                                                        <a href="professional-courses.html"
+                                                            class="text-decoration-none text-black">Professional
+                                                            Courses</a>
+                                                        <i class="fa-solid fa-caret-down ms-3" data-bs-toggle="collapse"
+                                                            data-bs-target="#professional"></i>
+                                                        <div class="collapse" id="professional">
+                                                            <ul class="list-unstyled ps-3 mt-3">
+                                                                <li class="mb-3">
+                                                                    <a href="web-designing.html"
+                                                                        class="text-decoration-none text-black">Web
+                                                                        Designing</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="web-development.html"
+                                                                        class="text-decoration-none text-black">Web
+                                                                        Development</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="digital-marketing.html"
+                                                                        class="text-decoration-none text-black">Digital
+                                                                        Marketing</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="full-stack-development.html"
+                                                                        class="text-decoration-none text-black">Full
+                                                                        Stack
+                                                                        Development</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="mern-stack.html"
+                                                                        class="text-decoration-none text-black">Mern
+                                                                        Stack</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="mean-stck.html"
+                                                                        class="text-decoration-none text-black">Mean
+                                                                        Stack</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="graphics-design.html"
+                                                                        class="text-decoration-none text-black">Graphics
+                                                                        Design</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <a href="short-term-courses.html"
+                                                            class="text-decoration-none text-black">Short Term
+                                                            Courses</a>
+                                                        <i class="fa-solid fa-caret-down ms-3" data-bs-toggle="collapse"
+                                                            data-bs-target="#shortterm"></i>
+                                                        <div class="collapse" id="shortterm">
+                                                            <ul class="list-unstyled ps-3 mt-3">
+                                                                <li class="mb-3">
+                                                                    <a href="seo"
+                                                                        class="text-decoration-none text-black">SEO</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="html-css.html"
+                                                                        class="text-decoration-none text-black">HTML and
+                                                                        CSS</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="wordpress.html"
+                                                                        class="text-decoration-none text-black">Wordpress</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="jquery.html"
+                                                                        class="text-decoration-none text-black">JQuery</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="javascript.html"
+                                                                        class="text-decoration-none text-black">Javascript</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="bootstrap.html"
+                                                                        class="text-decoration-none text-black">Bootstrap</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="corel-draw.html"
+                                                                        class="text-decoration-none text-black">Corel
+                                                                        Draw</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="angular-development.html"
+                                                                        class="text-decoration-none text-black">Angular
+                                                                        Development</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="php.html"
+                                                                        class="text-decoration-none text-black">Php</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="react-js.html"
+                                                                        class="text-decoration-none text-black">React
+                                                                        Js</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="python.html"
+                                                                        class="text-decoration-none text-black">Python</a>
+                                                                </li>
+                                                                <li class="mb-3">
+                                                                    <a href="mongo-db.html"
+                                                                        class="text-decoration-none text-black">Mongo
+                                                                        DB</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            Student
+                                            <i class="fa-solid fa-caret-down ms-3" data-bs-toggle="collapse"
+                                                data-bs-target="#student"></i>
+                                            <div class="collapse" id="student">
+                                                <ul class="list-unstyled ps-3 mt-3">
+                                                    <li class="mb-3">
+                                                        <a href="admission-criteria.html"
+                                                            class="text-decoration-none text-black">
+                                                            Admission Criteria
+                                                        </a>
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <a href="student-internship.html"
+                                                            class="text-decoration-none text-black">
+                                                            Student Internship
+                                                        </a>
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <a href="student-placement.html"
+                                                            class="text-decoration-none text-black">
+                                                            Student Placement
+                                                        </a>
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <a href="reviews.html" class="text-decoration-none text-black">
+                                                            Reviews
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            Educator
+                                            <i class="fa-solid fa-caret-down ms-3" data-bs-toggle="collapse"
+                                                data-bs-target="#educator"></i>
+                                            <div class="collapse" id="educator">
+                                                <ul class="list-unstyled ps-3 mt-3">
+                                                    <li class="mb-3">
+                                                        <a href="company-internship.html"
+                                                            class="text-decoration-none text-black">
+                                                            Company Internship
+                                                        </a>
+                                                    </li>
+                                                    <li class="mb-3">
+                                                        <a href="company-placement.html"
+                                                            class="text-decoration-none text-black">
+                                                            Company Placement
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="gallery.html" class="text-decoration-none text-black">Gallery</a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="blogs.html" class="text-decoration-none text-black">Blogs</a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="contact.html" class="text-decoration-none text-black">Contact</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="tel: +91-7210018919">
+                                                <button class="navbar-btn">+91-7210018919</button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-12 text-center mb-2">
+                <h2>Short Term Courses</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card py-5">
+                    <div class="card-img text-center">
+                        <img src="https://www.sithub.in/Admin/CourseImages/7155205%20(1).jpg" alt="" width="50%">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>SEO</h3>
+                        </div>
+                        <p>Are you looking to boost your website's visibility and increase your online presence? Look no
+                            further than SITHUB's SEO course! Our comprehensive...</p>
+                        <a href="seo.html"><button class="btn btn-primary">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card py-5">
+                    <div class="card-img text-center">
+                        <img src="https://www.sithub.in/Admin/CourseImages/191122054343htmlcss%20(2).webp" alt=""
+                            width="50%">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>HTML and CSS</h3>
+                        </div>
+                        <p>HTML and CSS are two essential programming languages for anyone looking to build a website.
+                            HTML (Hypertext Markup Language) is responsible for the...</p>
+                        <a href="html-css.html"><button class="btn btn-primary">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card py-5">
+                    <div class="card-img text-center">
+                        <img src="https://www.sithub.in/Admin/CourseImages/191122054358wordpress.webp" alt=""
+                            width="50%">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Wordpress</h3>
+                        </div>
+                        <p>Full WordPress Development Course in DelhiSIT Hub Training institute provides a full
+                            WordPress development course for beginner students and web...</p>
+                        <a href="wordpress.html"><button class="btn btn-primary">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card py-5">
+                    <div class="card-img text-center">
+                        <img src="https://www.sithub.in/Admin/CourseImages/191122054412jquery.webp" alt="" width="50%">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>JQuery</h3>
+                        </div>
+                        <a href="jquery.html"><button class="btn btn-primary">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card py-5">
+                    <div class="card-img text-center">
+                        <img src="https://www.sithub.in/Admin/CourseImages/191122054431js%20(1).webp" alt=""
+                            width="50%">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Javascript</h3>
+                        </div>
+                        <a href="javascript.html"><button class="btn btn-primary">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card py-5">
+                    <div class="card-img text-center">
+                        <img src="https://www.sithub.in/Admin/CourseImages/191122054450bootstrap.webp" alt=""
+                            width="50%">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Bootstrap</h3>
+                        </div>
+                        <a href="bootstrap.html"><button class="btn btn-primary">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card py-5">
+                    <div class="card-img text-center">
+                        <img src="https://www.sithub.in/Admin/CourseImages/vecteezy_corel-draw-circle-icon-for-web-design_20964384_287%20(2).png"
+                            alt="" width="50%">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Corel Draw</h3>
+                        </div>
+                        <a href="corel-draw.html"><button class="btn btn-primary">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card py-5">
+                    <div class="card-img text-center">
+                        <img src="https://www.sithub.in/Admin/CourseImages/191122054617angular.webp" alt="" width="50%">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Angular Development</h3>
+                        </div>
+                        <a href="angular-development.html"><button class="btn btn-primary">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card py-5">
+                    <div class="card-img text-center">
+                        <img src="https://www.sithub.in/Admin/CourseImages/191122054636php.webp" alt="" width="50%">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Php</h3>
+                        </div>
+                        <a href="php.html"><button class="btn btn-primary">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card py-5">
+                    <div class="card-img text-center">
+                        <img src="https://www.sithub.in/Admin/CourseImages/191122054651react.webp" alt="" width="50%">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>React Js</h3>
+                        </div>
+                        <a href="react-js.html"><button class="btn btn-primary">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card py-5">
+                    <div class="card-img text-center">
+                        <img src="https://www.sithub.in/Admin/CourseImages/python%20(1).webp" alt="" width="50%">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Python</h3>
+                        </div>
+                        <p>Python</p>
+                        <a href="python.html"><button class="btn btn-primary">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card py-5">
+                    <div class="card-img text-center">
+                        <img src="https://www.sithub.in/Admin/CourseImages/MongoDB_logo_PNG4%20(2).png" alt=""
+                            width="50%">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Mongo DB</h3>
+                        </div>
+                        <p>Mongo DB</p>
+                        <a href="mongo-db.html"><button class="btn btn-primary">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer-menu py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-brand" style="width: 190px;">
+                        <img src="https://www.sithub.in/Admin/WebsiteImages/060324110713sithub-logo1.svg" alt=""
+                            width="100%">
+                    </div>
+                    <p>Welcome to <b>Sithub</b>, is an IT Training Center providing training in IT professional Courses.
+                        Make your career with the updated content, designed by our IT experts. Sithub is an ISO
+                        Certified Institute and is also registered by the Government of India.</p>
+                    <div class="footer-socialmedia-icons">
+                        <a href="https://www.facebook.com/sithubtraining" target="blank" class="text-decoration-none">
+                            <img src="https://www.sithub.in/assets/images/contact/facebook.png" alt="" width="50px">
+                        </a>
+                        <a href="https://www.instagram.com/sithubtraining/" target="blank" class="text-decoration-none">
+                            <img src="https://www.sithub.in/assets/images/contact/icons8-instagram-48.png" alt=""
+                                width="50px">
+                        </a>
+                        <a href="https://www.youtube.com/@sithubtraining" target="blank" class="text-decoration-none">
+                            <img src="https://www.sithub.in/assets/images/contact/youtube.png" alt="" width="50px">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h2>USEFUL <span class="text-primary fs-2">LINKS</span></h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="feedback.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Share Feedback
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="career.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Career With Us
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="student-internship.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Internship
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="student-placement.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Placement
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="reviews.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Reviews
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#demo-modal">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Demo Class
+                        </li>
+                        <div class="modal" id="demo-modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header text-black">
+                                        <h4>Get A Free Demo Session!</h4>
+                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="" method="post">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="name" class="form-label text-black">Name</label>
+                                                    <input type="text" name="name" id="name" class="form-control">
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="mobile" class="form-label text-black">Mobile Number</label>
+                                                    <input type="tel" name="mobile" id="mobile" class="form-control">
+                                                </div>
+                                            </div>
+                                            <label for="course" class="form-label text-black mt-3">Choose Course</label>
+                                            <select name="course" id="course" class="form-select">
+                                                <option value="" disabled selected>Select Course</option>
+                                                <option value="webdesigning">Web Designing</option>
+                                                <option value="webdeveleopment">Web Development</option>
+                                                <option value="phpdeveleopment">Php Development</option>
+                                                <option value="digitalmarketing">Digital Marketing</option>
+                                                <option value="fullstackdevelopment">Full Stack Development</option>
+                                                <option value="seo">SEO</option>
+                                                <option value="htmlandcss">HTML and CSS</option>
+                                                <option value="wordpress">Wordpress</option>
+                                                <option value="jquery">JQuery</option>
+                                                <option value="javascript">Javascript</option>
+                                                <option value="bootstrap">Bootstrap</option>
+                                                <option value="googleadword">Google Adword</option>
+                                                <option value="coreldrw">Corel Draw</option>
+                                                <option value="cpanel">CPanel</option>
+                                                <option value="angulardevelopment">Angular Development</option>
+                                                <option value="php">Php</option>
+                                                <option value="reactjs">React Js</option>
+                                                <option value="python">Python</option>
+                                                <option value="mongodb">Mongo DB</option>
+                                                <option value="nodejs">Node Js</option>
+                                                <option value="mernstack">Mern stack</option>
+                                                <option value="meanstack">Mean Stack</option>
+                                                <option value="json">JSON</option>
+                                                <option value="laravel">Laravel</option>
+                                                <option value="mysql">MYSQL</option>
+                                                <option value="javaprogram">Java Program</option>
+                                                <option value="codeinitorframework">Codeignitor Framework</option>
+                                                <option value="graphicsdesign">Graphics Design</option>
+                                            </select>
+                                            <label for="message" class="form-label text-black mt-3">Message</label>
+                                            <textarea name="message" id="" cols="30" rows="5"
+                                                class="form-control"></textarea>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary mx-auto">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="latest-jobs.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Find Latest Jobs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h2>HOT <span class="text-primary fs-2">COURSES</span></h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="web-designing.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Web Designing Course
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="digital-marketing.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Digital Marketing Course
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="python.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Python Developer Course
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="full-stack-development.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Full Stack Developer Course
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="html-css.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                HTML and CSS Course
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="angular-development.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                Angular Development Course
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="seo.html" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-angle-right"></i>
+                                SEO Course
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h2>HOT <span class="text-primary fs-2">COURSES</span></h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-location-dot"></i>
+                                ADDRESS <br>
+                                Sithub, 32, Gramsabha Sewak Park Uttam Nagar,Near by Dwarka Mod Metro Station, Pillar
+                                No. 774, New Delhi- 110059.
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="tel: +91-7210018919" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-phone"></i>
+                                PHONE <br>
+                                +91-7210018919
+                            </a>
+                        </li>
+                        <li class="mb-3" style="border-bottom: 1px dotted grey;">
+                            <a href="mailto: info@sithub.in" class="text-decoration-none text-white">
+                                <i class="fa-solid fa-envelope"></i>
+                                EMAIL
+                                info@sithub.in
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 text-lg-start text-md-start text-sm-start">
+                    <p>
+                        Copyright © 2023, Designed And Maintained By <a href="https://www.hedkeyindia.com/"
+                            class="text-decoration-none">Hedkey India Pvt Ltd</a>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 text-lg-end text-md-start text-sm-start">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="privacy-policy.html" class="text-decoration-none footer-link">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="terms-conditions.html" class="text-decoration-none footer-link">Terms & Conditions</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="about.html" class="text-decoration-none footer-link">About Us </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="sitemap.html" class="text-decoration-none footer-link">Sitemap </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="join-now.html" class="text-decoration-none footer-link">Help Desk</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=917210018919&text" target="blank">
+        <button class="whatsapp-fixed d-lg-block d-md-block d-sm-none">
+            WhatsApp Now
+            <img src="https://www.sithub.in/images/whatsapp-icon.webp" alt="" width="25px">
+        </button>
+    </a>
+    <div class="container-fluid phone-whatsapp-fixed d-lg-none d-md-none d-sm-block bg-white">
+        <div class="row">
+            <a href="tel: +91-7210018919"
+                class="col-6 text-decoration-none text-center text-black border-end border-black py-3">
+                Phone
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=917210018919&text"
+                class="col-6 text-decoration-none text-center text-black py-3" target="_blank">
+                WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

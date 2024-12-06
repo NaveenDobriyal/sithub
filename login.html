@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        .container-fluid{
+            background-image: url(images/sithub10.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-top: 50px;
+            padding-bottom: 70px;
+        }
+        .card-img{
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        .card-img>p{
+            position: absolute;
+            top: 50%;
+            font-size: 18px;
+            color: white;
+        }
+        input::placeholder{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 col-mg-8 col-sm-10 mx-auto">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="images/sithub10.webp" alt="" width="100%">
+                        <p>Welcome to the SITHUB ®</p>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3>Student LOGIN</h3>
+                        <form action="" method="post">
+                            <div>
+                                <input type="text" name="username" id="" placeholder="Username" class="form-control bg-secondary text-white">
+                            </div>
+                            <br>
+                            <div>
+                                <input type="password" name="password" id="" placeholder="Password" class="form-control bg-secondary text-white">
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="index.html"><button class="btn btn-primary w-100">Home</button></a>
+                                </div>
+                                <div class="col-6">
+                                    <input type="submit" name="submit" id="" class="btn btn-success w-100">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
